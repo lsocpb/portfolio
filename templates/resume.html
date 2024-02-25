@@ -1,0 +1,299 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Łukasz Socik</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="{% static '/css/style.css' %}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body id="top">
+    <header id="header" class="fixed-top">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <div class="header-left">
+          <h1 class="logo">
+            <a href={% url 'home' %}>Łukasz</a>
+          </h1>
+        </div>
+        <div class="header-center">
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li>
+                <a href="{% url 'home' %}">Home</a>
+              </li>
+              <li>
+                <a href={% url 'about' %}>About</a>
+              </li>
+              <li>
+                <a class="active" href={% url 'resume' %}>Resume</a>
+              </li>
+              <li>
+                <a href={% url 'projects' %}>Projects</a>
+              </li>
+              <li>
+                <a href={% url 'contact' %}>Contact</a>
+              </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+        </div>
+        <div class="header-right">
+          <div class="header-social-links">
+            <a href="https://github.com/lsocpb" class="github">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="#" class="linkedin">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page-content" style="margin-top: 120px">
+      <div class="container">
+        <div class="cover shadow-lg bg-white">
+          <div class="bg p-3 p-lg-4 text-white">
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-md-6 text-center mb-3 mb-md-0">
+                <img src="{% static 'images/resume.jpg' %}" class="img-fluid rounded-circle" alt="Profile Picture" style="max-width: 200px;">
+              </div>
+              <div class="col-lg-8 col-md-6 text-center text-md-start">
+                <h2 class="h1 mt-4">Łukasz Socik</h2>
+                <p class="mb-4">Fullstack Developer</p>
+                <div class="d-print-none" data-aos="fade-left">
+                  <a class="btn btn-light text-dark shadow-sm me-1" href="{% static 'documents/mycv.pdf' %}" target="_blank">Download CV</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-section pt-4 px-3">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="h3 mb-3" style="text-align: center">About Me</h2>
+                <p>I am a dedicated future engineer with passion for building sustainable solutions. With a solid foundation from Bialystok University of Technology, I'm looking for further growth opportunities into the realm of IT. I am motivated by innovation and committed to making a positive impact through my work.</p>
+              </div>
+              <div class="col-md-6 text-center">
+                <h2 class="h3 mb-3" style="text-align: center">Contact</h2>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="bi bi-envelope-fill"></i> socik2091@gmail.com
+                  </li>
+                  <li>
+                    <i class="bi bi-phone-fill"></i> Hidden
+                  </li>
+                  <li>
+                    <i class="bi bi-geo-alt-fill"></i> Bialystok, Poland
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/%C5%82ukasz-socik-4a6baa233/" target="_blank">
+                      <i class="bi bi-linkedin"></i> LinkedIn </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/lsocpb" target="_blank">
+                      <i class="bi bi-github"></i> GitHub </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr class="d-print-none" />
+          <div class="row">
+            <div class="col-md-6">
+              <div class="skills-section px-1 px-lg-4">
+                <h2 class="h3 mb-3" style="text-align: center">Tech Skills</h2>
+                <div class="d-flex flex-wrap justify-content-center">
+                  <div class="col-md-4 col-sm-6 text-center align-items-center">
+                    <div class="mb-2 skill-set">
+                      <span>Python</span>
+                    </div>
+                    <div class="mb-2 skill-set">
+                      <span>FastAPI</span>
+                    </div>
+                    <div class="mb-2 skill-set">
+                      <span>Tensorflow</span>
+                    </div>
+                    <div class="mb-2 skill-set">
+                      <span>HTML</span>
+                    </div>
+                    <div class="mb-2 skill-set">
+                      <span>CSS</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 text-center align-items-center">
+                    <div class="mb-2 skill-set">
+                      <span>Java</span>
+                    </div>
+                    <div class="mb-2 skill-set">
+                      <span>Git</span>
+                    </div>
+                    <div class="mb-2 skill-set">
+                      <span>Figma</span>
+                    </div>
+                    <div class="mb-2 skill-set">
+                      <span>SQL</span>
+                    </div>
+                    <div class="mb-2 skill-set">
+                      <span>Postman</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 text-center align-items-center">
+                    <div class="mb-2 skill-set">
+                      <span>REST</span>
+                    </div>
+                    <div class="mb-2 skill-set">
+                      <span>Gretl</span>
+                    </div>
+                    <div class="mb-2 skill-set">
+                      <span>Bootstrap</span>
+                    </div>
+                    <div class="mb-2 skill-set">
+                      <span>Android</span>
+                    </div>
+                    <div class="mb-2 skill-set">
+                      <span>Jupyter</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="skills-section px-1 px-lg-4">
+                <h2 class="h3 mb-3" style="text-align: center;">Languages</h2>
+                <div class="skill-container">
+                  <div class="skill">
+                    <span>Polish (native)</span>
+                    <div class="skill-bar">
+                      <div class="skill-level" style="width: 100%;"></div>
+                    </div>
+                  </div>
+                  <div class="skill">
+                    <span>English (B2)</span>
+                    <div class="skill-bar">
+                      <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="d-print-none" />
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="education-section px-3 px-lg-4 pb-4">
+                  <h2 class="h3 mb-4">Education</h2>
+                  <div class="line">
+                    <div class="line-card card shadow-sm">
+                      <div class="card-body">
+                        <div class="h5 mb-1">Computer Science and Econometrics <span class="text-muted h6">Bialystok University of Technology</span>
+                        </div>
+                        <div class="text-muted text-small">2021 - present</div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="experience-section px-3 px-lg-4">
+                  <h2 class="h3 mb-4">Work Experience</h2>
+                  <div class="line">
+                    <div class="line-card card shadow-sm">
+                      <div class="card-body">
+                        <div class="h5 mb-1">Maintenance worker, Dishwasher employee <span class="text-muted h6" style="margin-left: 10px">Ośrodek Wczasowy Jantar</span>
+                        </div>
+                        <div class="text-muted text-small">July 2022 - September 2022</div>
+                        <div class="text-muted text-small">July 2023 - September 2023</div>
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="line-card card shadow-sm">
+                      <div class="card-body">
+                        <div class="h5 mb-1">Cherry Sorting Warehouse Associate <span class="text-muted h6" style="margin-left: 10px">Royal Fruit Company Belgium</span>
+                        </div>
+                        <div class="text-muted text-small">June 2021 - August 2021</div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 px-3 px-lg-4">
+                <div class="projects-section">
+                  <h2 class="h3 mb-4">Projects</h2>
+                  <div class="h5 mb-1">1. Backend Microservice</div>
+                  <div class="text text-small">We developed a backend microservice using FastAPI for a web app to track financial portfolios and simulate stock markets, ensuring efficient API handling and frontend integration <div class="mb-2 d-flex flex-wrap" style="margin-top: 15px">
+                      <div class="mr-2 skill-set" style="width: 20%">
+                        <span>Python</span>
+                      </div>
+                      <div class="mr-2 skill-set" style="width: 20%">
+                        <span>FastAPI</span>
+                      </div>
+                      <div class="mr-2 skill-set" style="width: 20%">
+                        <span>MySQL</span>
+                      </div>
+                      <div class="mr-2 skill-set" style="width: 20%">
+                        <span>InfluxDB</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="h5 mb-1">2. Portfolio</div>
+                  <div class="text text-small"> My personal website where you can find basic information about me and projects that I did.</div>
+                  <div class="mb-2 d-flex flex-wrap" style="margin-top: 15px">
+                    <div class="mr-2 skill-set" style="width: 20%">
+                      <span>HTML</span>
+                    </div>
+                    <div class="mr-2 skill-set" style="width: 20%">
+                      <span>CSS</span>
+                    </div>
+                    <div class="mr-2 skill-set" style="width: 20%">
+                      <span>Django</span>
+                    </div>
+                    <div class="mr-2 skill-set" style="width: 20%">
+                      <span>Bootstrap</span>
+                    </div>
+                  </div>
+                  <div class="h5 mb-1">3. Weather App</div>
+                  <div class="text text-small"> Android app powered by Room and Retrofit libraries where user can check accurate forecast and adjust settings.</div>
+                  <div class="mb-2 d-flex flex-wrap" style="margin-top: 15px">
+                    <div class="mr-2 skill-set" style="width: 20%">
+                      <span>Java</span>
+                    </div>
+                    <div class="mr-2 skill-set" style="width: 20%">
+                      <span>Room</span>
+                    </div>
+                    <div class="mr-2 skill-set" style="width: 20%">
+                      <span>Retrofit</span>
+                    </div>
+                  </div>
+                  <div class="h5 mb-1">3. CLI and GUI Football App</div>
+                  <div class="text text-small"> Android app powered by Room and Retrofit libraries where user can check accurate forecast and adjust settings.</div>
+                  <div class="mb-2 d-flex flex-wrap" style="margin-top: 15px">
+                    <div class="mr-2 skill-set" style="width: 20%">
+                      <span>Python</span>
+                    </div>
+                    <div class="mr-2 skill-set" style="width: 20%">
+                      <span>Curses</span>
+                    </div>
+                    <div class="mr-2 skill-set" style="width: 20%">
+                      <span>Tkinter</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="d-print-none" />
+            </div>
+          </div>
+        </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
