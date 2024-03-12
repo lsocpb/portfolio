@@ -226,7 +226,7 @@ h6 {
 }
 
 .mobile-nav-toggle {
-  color: #222222;
+  color: #75a9f5;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -401,10 +401,13 @@ h6 {
 }
 
 #hero h2 {
-  color: #6f6f6f;
   margin: 10px 0 0 0;
   font-size: 22px;
   text-align: center;
+  background: linear-gradient(to right, #779dea, #6dbb6e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 #hero .btn-about {
